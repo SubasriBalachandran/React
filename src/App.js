@@ -1,20 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-import {Message} from "./Message";
-import { ListElements } from './ListElements';
+import { NavBar } from './Components/NavBar';
 
 function App() {
   return  (
     //to access the return with various statements <div> is used.
     <div>
-  <Message></Message>
-  <ListElements></ListElements>   
+      {
+        <NavBar/>
+        <main/>
+        <footer/>
+      }
   </div>
   );
 }
 
 export default App;
 
+// import {Message} from "./Message";
+// import { ListElements } from './ListElements';
+
+//{/* <Message></Message>
+//<ListElements></ListElements>    */
 //(
   //   <div className="App">
 //     <header className="App-header">
