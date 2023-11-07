@@ -1,42 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import { NavBar } from './Components/NavBar';
+import logo from "./logo.svg";
+import "./App.css";
+import Footerr from "./Components/Footerr";
+import MainDiv from "./Components/MainDiv";
+import Headrer from "./Components/Headrer";
 
 function App() {
-  return  (
-    //to access the return with various statements <div> is used.
+  return (
     <div>
-      {
-        <NavBar/>
-        <main/>
-        <footer/>
-      }
-  </div>
+      <Headrer></Headrer>
+    <MainDiv></MainDiv>
+    <Footerr></Footerr>
+
+    </div>
   );
-}
-
+    }
+   
 export default App;
-
-// import {Message} from "./Message";
-// import { ListElements } from './ListElements';
-
-//{/* <Message></Message>
-//<ListElements></ListElements>    */
-//(
-  //   <div className="App">
-//     <header className="App-header">
-//       <img src={logo} className="App-logo" alt="logo" />
-//       <p>
-//         Edit <code>src/App.js</code> and save to reload.
-//       </p>
-//       <a
-//         className="App-link"
-//         href="https://reactjs.org"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//       >
-//         Learn React
-//       </a>
-//     </header>
-//   </div>
-// );
