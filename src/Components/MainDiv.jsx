@@ -3,16 +3,15 @@ import React from 'react'
 const MainDiv = () => {
   return (
     <div>
-        <label for="Name">Email ID:&emsp;</label>
+        <center><label for="Name">Email ID:&emsp;</label>
         <input id="Name" type="box" placeholder="Email Id"></input>
-        <br></br>
+        <br></br><br></br>
         <label for="Na">Password:&emsp;</label>
-        <input id="Na" type="box" placeholder="Password"></input>
-        <br></br>
-        <label for="x">SUBMIT:&emsp;</label>
-        <input id="x" type="box" placeholder="click"></input>
+        <input id="Na" type="password" placeholder="Password"></input>
+        <br></br><br></br>
         
-        <input></input>
+        <button>SUBMIT</button></center>
+        
     </div>
   );
 };

@@ -4,7 +4,7 @@ const Headrer = () => {
   return (
     <div>
         <hr></hr>
-        <h1 style={{backgroundColor:'blueviolet',fontSize:"25px"}}>Your Name</h1>
+        <h1 style={{backgroundColor:"cyan",fontSize:"25px", textAlign:'center'}}>Your Name</h1>
         <hr></hr>
     </div>
   );
