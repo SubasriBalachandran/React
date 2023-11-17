@@ -1,31 +1,49 @@
-import { useState } from "react";
-import Cart from "./Day3Components/CoffeeShop/Cart";
-import Menu from "./Day3Components/CoffeeShop/Menu";
-import NavBar from "./Day3Components/CoffeeShop/NavBar";
-import Product from "./Day3Components/CoffeeShop/Product";
+import Toggling from "./Day2/Toggling"
+
+
 function App() {
-  const [activeCategory, setActiveCategory] = useState(Product[0]);
-  const [products, setProducts] = useState([]);
-  const handleClick = (index) => {
-    setActiveCategory(Product[index]);
-  };
-  const handleAddToCart = (item) => {
-    setProducts([...products, item]);
-  };
- return (
-    <div >
-      <NavBar category={Product} handleClick={handleClick} />
-      <Menu activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
-      <Cart products={products} />
-    </div>
-  );
+  return (
+    <div><Toggling></Toggling></div>
+  )
 }
-export default App;
+
+export default App
+
+//project
+// import Regeister from "./EventManagement/Regeister"
 
 
+// function App() {
+//   return (
+//     <div><Regeister></Regeister></div>
+//   )
+// }
 
+// export default App
 
-
+// import { useState } from "react";
+// import Cart from "./Day3Components/CoffeeShop/Cart";
+// import Menu from "./Day3Components/CoffeeShop/Menu";
+// import NavBar from "./Day3Components/CoffeeShop/NavBar";
+// import Product from "./Day3Components/CoffeeShop/Product";
+// function App() {
+//   const [activeCategory, setActiveCategory] = useState(Product[0]);
+//   const [products, setProducts] = useState([]);
+//   const handleClick = (index) => {
+//     setActiveCategory(Product[index]);
+//   };
+//   const handleAddToCart = (item) => {
+//     setProducts([...products, item]);
+//   };
+//  return (
+//     <div >
+//       <NavBar category={Product} handleClick={handleClick} />
+//       <Menu activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
+//       <Cart products={products} />
+//     </div>
+//   );
+// }
+// export default App;
 
 
 // //import logo from "./logo.svg";
@@ -59,3 +77,4 @@ export default App;
 //     }
    
 // export default App;
+
