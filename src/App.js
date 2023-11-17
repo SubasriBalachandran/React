@@ -1,18 +1,65 @@
-import Toggling from "./Day2/Toggling"
-
+import React from 'react'
+import FruitSurvey from './Day4/FruitSurvey'
+import MaterialButton from './Day4/LoginButton'
+import Form from './Day2/Form'
 
 function App() {
   return (
-    <div><Toggling></Toggling></div>
+     <div>
+      <Form></Form>
+    {/* <FruitSurvey></FruitSurvey> <MaterialButton></MaterialButton>*/}
+    </div>
   )
 }
 
 export default App
 
+
+
+
+//import Toggling from "./Day3Components/Toggling"
+//import FormComponents from "./Day3Components/FormComponents"
+//import Transformation from "./Day3Components/Transformation"
+// import Buttons from "./Day4/Counter/Buttons"
+//day4
+// import Counter from "./Day4/Counter/Counter"
+// import Display from "./Day4/Counter/Display"
+//import Styles from "./Day4/Styling/Styles"
+//import Grouping from "./Day4/Styling/Grouping"
+// import { GitHub } from "@mui/icons-material"
+// import BasicMenu from "./Day4/Styling/DropDown"
+// import MediaCard from "./Day4/Styling/MaterialCard"
+// import MaterialGrid from "./Day4/Styling/MaterialGrid"
+
+
+
+// function App() {
+//   return (
+//     <div>
+//      <MaterialGrid></MaterialGrid><GitHub></GitHub>
+//     <BasicMenu></BasicMenu>
+//     <MediaCard></MediaCard>
+//     </div>
+//   )
+// }
+// function App() {
+//   return (
+//     <div>
+//  <Styles></Styles>
+//   <Grouping></Grouping>
+//    <Toggling></Toggling>
+//   <FormComponents></FormComponents>
+//     <Transformation></Transformation> <Display></Display>
+//      <Buttons></Buttons>
+//      <Counter></Counter>
+//     </div>
+//   )
+// }
+
+//export default App
+
 //project
 // import Regeister from "./EventManagement/Regeister"
-
-
 // function App() {
 //   return (
 //     <div><Regeister></Regeister></div>
