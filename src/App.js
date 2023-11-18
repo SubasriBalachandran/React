@@ -1,4 +1,5 @@
 import React from 'react'
+import ResponsiveAppBar from './EventManagement/Appbar'
 // import FruitSurvey from './Day4/FruitSurvey'
 // import MaterialButton from './Day4/LoginButton'
 // import Form from './Day2/Form'
@@ -62,16 +63,18 @@ import React from 'react'
 
 import Regeister from "./EventManagement/Regeister"
 import { Routes,Route } from 'react-router-dom'
-import Navbar from './EventManagement/Navbar'
+// import Navbar from './EventManagement/Navbar'
 import Login from './EventManagement/Login'
 function App() {
   return (
     
     <div>
+      
       <Routes>
-        <Route path="/" element={<Navbar/>}></Route>
+        <Route path="/" element={<ResponsiveAppBar></ResponsiveAppBar>}></Route>
         <Route path="/regeister" element={<Regeister/>}></Route>
-      </Routes>
+        <Route path="/login" element={<Login/>}></Route>
+      </Routes> 
     </div>
   )
 }
