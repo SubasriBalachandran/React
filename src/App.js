@@ -1,18 +1,18 @@
 import React from 'react'
-import FruitSurvey from './Day4/FruitSurvey'
-import MaterialButton from './Day4/LoginButton'
-import Form from './Day2/Form'
+// import FruitSurvey from './Day4/FruitSurvey'
+// import MaterialButton from './Day4/LoginButton'
+// import Form from './Day2/Form'
 
-function App() {
-  return (
-     <div>
-      <Form></Form>
-    {/* <FruitSurvey></FruitSurvey> <MaterialButton></MaterialButton>*/}
-    </div>
-  )
-}
+// function App() {
+//   return (
+//      <div>
+//       <Form></Form>
+//     {/* <FruitSurvey></FruitSurvey> <MaterialButton></MaterialButton>*/}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 
@@ -59,14 +59,24 @@ export default App
 //export default App
 
 //project
-// import Regeister from "./EventManagement/Regeister"
-// function App() {
-//   return (
-//     <div><Regeister></Regeister></div>
-//   )
-// }
 
-// export default App
+import Regeister from "./EventManagement/Regeister"
+import { Routes,Route } from 'react-router-dom'
+import Navbar from './EventManagement/Navbar'
+import Login from './EventManagement/Login'
+function App() {
+  return (
+    
+    <div>
+      <Routes>
+        <Route path="/" element={<Navbar/>}></Route>
+        <Route path="/regeister" element={<Regeister/>}></Route>
+      </Routes>
+    </div>
+  )
+}
+
+export default App
 
 // import { useState } from "react";
 // import Cart from "./Day3Components/CoffeeShop/Cart";
